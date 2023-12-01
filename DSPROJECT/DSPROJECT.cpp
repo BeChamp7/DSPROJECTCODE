@@ -9,16 +9,7 @@ public:
 
 
 
-	static T findMax(T A[], int i, int j) {
-		int firstindex = i, lastindex = j;
-		T num = A[firstindex];
-		for (int p = firstindex; p < lastindex; p++) {
-			if (num < A[p]) {
-				num = A[p];
-			}
-		}
-		return num;
-	}
+	
 	static int findMaxPos(T A[], int i, int j) {
 		int pos = i, lastindex = j;
 
