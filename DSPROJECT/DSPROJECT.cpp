@@ -7,16 +7,7 @@ template <class T>
 class ArrayBasics {
 public:
 
-	bool isSortedDescending(T arr[], int size) {
-		for (int i = 1; i < size; i++) {
-			for (int j = i - 1; j < size; j++) {
-				if (arr[i]!> arr[j]) {
-					return false;
-				}
-			}
-		}
-		return true;
-	}
+
 
 	static T findMax(T A[], int i, int j) {
 		int firstindex = i, lastindex = j;
