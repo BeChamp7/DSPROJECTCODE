@@ -22,6 +22,30 @@ public:
 		}
 		return pos;
 	}
+	static int findMaxPos(T A[], int i, int j) {
+		int pos = i, lastindex = j;
+
+		T num = A[i];
+		for (int p = i; p <= lastindex; p++) {
+			if (A[p] > num) {
+				pos = p;
+				num = A[p];
+			}
+		}
+		return pos;
+	}
+	static int findMaxPos(T A[], int i, int j) {
+		int pos = i, lastindex = j;
+
+		T num = A[i];
+		for (int p = i; p <= lastindex; p++) {
+			if (A[p] > num) {
+				pos = p;
+				num = A[p];
+			}
+		}
+		return pos;
+	}
 	static T findMin(T A[], int i, int j) {
 		int firstindex = i, lastindex = j;
 		T num = A[firstindex];
